@@ -15,5 +15,12 @@ public class NonStaticMembersDemo {
 	public static void main(String[] args) {
 		System.out.println("Inside main");
 		new NonStaticMembersDemo();
+		new NonStaticMembersDemo();
+		new NonStaticMembersDemo();
+		new NonStaticMembersDemo();
+	}
+
+	static {
+		System.out.println("Inside static block");
 	}
 }
