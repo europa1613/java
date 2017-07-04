@@ -3,11 +3,11 @@ package com.corejava;
 public class StaticMembersDemo {
 
 	static int num;
-	
+
 	public static void main(String[] args) {
 		System.out.println("Main method!");
 		StaticMembersDemo.method();
-		System.out.println("Static Variable, num: "+ StaticMembersDemo.num);
+		System.out.println("Static Variable, num: " + StaticMembersDemo.num);
 	}
 
 	static {
