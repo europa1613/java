@@ -4,9 +4,9 @@ public class NonStaticMembersDemo {
 
 	int num;
 
-	public NonStaticMembersDemo() {
+	/*public NonStaticMembersDemo() {
 		System.out.println("Inside contructor");
-	}
+	}*/
 
 	{
 		System.out.println("Inside non static block");
