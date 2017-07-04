@@ -1,2 +1,2 @@
-# java
+# Java
 All Java projects
