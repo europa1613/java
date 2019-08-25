@@ -6,15 +6,15 @@ import java.util.List;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.TimeUnit;
-import java.util.stream.Collectors;
 
 public class CompletableFuturePipeline {
 
-  public static CompletableFuture<List<Integer>> process(CompletableFuture<List<Integer>> future) {
+  MultiplyBy multiplier = new MultiplyBy();
+
+  public CompletableFuture<List<Integer>> process(CompletableFuture<List<Integer>> future) {
     return future
-        .thenApply(MultiplyBy::two)
-        .thenApply(MultiplyBy::three)
-        .toCompletableFuture();
+        .thenApply(multiplier::two)
+        .thenApply(multiplier::three);
   }
 
   public static void main(String[] args) {
@@ -22,7 +22,8 @@ public class CompletableFuturePipeline {
     CompletableFuture<List<Integer>> cf = new CompletableFuture<>();
     cf.completeOnTimeout(Collections.emptyList(), 3000, TimeUnit.MILLISECONDS);
     System.out.println("--2--");
-    CompletableFuture<List<Integer>> futures = process(cf);
+    CompletableFuturePipeline pipeline = new CompletableFuturePipeline();
+    CompletableFuture<List<Integer>> futures = pipeline.process(cf);
     System.out.println("--3--");
     cf.complete(Arrays.asList(1, 2, 3));
     System.out.println("--4--");
