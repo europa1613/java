@@ -25,11 +25,14 @@ public class Worker extends Thread {
 
   synchronized void quit() throws InterruptedException {
     quittingTime = true;
+    System.out.println("Calling join");
     join();
+    System.out.println("Back from joining");
   }
 
   synchronized void keepWorking() {
     quittingTime = false;
+    System.out.println("Keep working");
   }
 
   public static void main(String[] args) throws InterruptedException {
