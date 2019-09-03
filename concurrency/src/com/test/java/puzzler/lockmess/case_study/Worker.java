@@ -1,9 +1,12 @@
 package com.test.java.puzzler.lockmess.case_study;
 
+import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
 public class Worker extends Thread {
+
+  private final Object lock = new Object();
 
   private volatile boolean quittingTime = false;
 
@@ -24,15 +27,19 @@ public class Worker extends Thread {
   }
 
   synchronized void quit() throws InterruptedException {
-    quittingTime = true;
-    System.out.println("Calling join");
-    join();
-    System.out.println("Back from joining");
+    synchronized (lock) {
+      quittingTime = true;
+      System.out.println("Calling join");
+      join();
+      System.out.println("Back from joining");
+    }
   }
 
   synchronized void keepWorking() {
-    quittingTime = false;
-    System.out.println("Keep working");
+    synchronized (lock) {
+      quittingTime = false;
+      System.out.println("Keep working");
+    }
   }
 
   public static void main(String[] args) throws InterruptedException {
