@@ -2,7 +2,7 @@ package com.test.volatility;
 
 public class LongWrapper {
 
-  //private Object key = new Object();
+  private Object key = new Object();
 
   private volatile long l;
 
@@ -11,13 +11,15 @@ public class LongWrapper {
   }
 
   public long getValue() {
-    return l;
+    synchronized (key) {
+      return l;
+    }
   }
 
   public void incrementValue() {
-    //synchronized (key) {
-    l = l + 1; // read followed by a write operation
-    //}
+    synchronized (key) {
+      l = l + 1; // read followed by a write operation
+    }
   }
 
 }
