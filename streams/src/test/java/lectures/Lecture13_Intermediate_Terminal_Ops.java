@@ -4,7 +4,7 @@ import java.util.stream.Collectors;
 import mockdata.MockData;
 import org.junit.Test;
 
-public class Lecture13 {
+public class Lecture13_Intermediate_Terminal_Ops {
   @Test
   public void intermediateAndTerminalOperations() throws Exception {
     System.out.println(

@@ -9,7 +9,7 @@ import java.util.Set;
 import java.util.stream.Collectors;
 import org.junit.Test;
 
-public class Lecture4 {
+public class Lecture4_Distinct_Set {
 
   @Test
   public void distinct() throws Exception {

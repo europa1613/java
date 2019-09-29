@@ -5,7 +5,7 @@ import com.google.common.collect.Lists;
 import java.util.Arrays;
 import org.junit.Test;
 
-public class Lecture9 {
+public class Lecture9_Reduce {
 
   @Test
   public void reduce() throws Exception {

@@ -7,7 +7,7 @@ import java.util.stream.Collectors;
 import mockdata.MockData;
 import org.junit.Test;
 
-public class Lecture12 {
+public class Lecture12_Collect_Collectors_How {
   @Test
   public void understandingCollect() throws Exception {
     List<String> emails = MockData.getPeople()

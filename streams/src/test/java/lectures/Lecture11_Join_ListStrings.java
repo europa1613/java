@@ -6,7 +6,7 @@ import java.util.stream.Collectors;
 import mockdata.MockData;
 import org.junit.Test;
 
-public class Lecture11 {
+public class Lecture11_Join_ListStrings {
 
   @Test
   public void joiningStrings() throws Exception {

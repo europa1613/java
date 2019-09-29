@@ -1,6 +1,6 @@
 package lectures;
 
-public class Lecture14 {
+public class Lecture14_Intermediate_Terminal_Ops {
   /*
     1. Concrete to abstraction - invoke stream
     2. Multiple operations map, filter, flatmap, average, sum, min, max n...

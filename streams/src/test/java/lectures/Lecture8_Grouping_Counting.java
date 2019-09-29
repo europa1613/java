@@ -11,7 +11,7 @@ import mockdata.MockData;
 import org.assertj.core.util.Lists;
 import org.junit.Test;
 
-public class Lecture8 {
+public class Lecture8_Grouping_Counting {
 
   @Test
   public void simpleGrouping() throws Exception {

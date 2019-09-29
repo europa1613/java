@@ -8,7 +8,7 @@ import java.util.stream.Collectors;
 import org.junit.Before;
 import org.junit.Test;
 
-public class Lecture10 {
+public class Lecture10_Flatmap {
 
   private static final List<ArrayList<String>> arrayListOfNames = Lists.newArrayList(
       Lists.newArrayList("Mariam", "Alex", "Ismail"),

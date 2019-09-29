@@ -7,7 +7,7 @@ import java.util.Comparator;
 import java.util.List;
 import org.junit.Test;
 
-public class Lecture3 {
+public class Lecture3_Min_Max {
 
   @Test
   public void min() throws Exception {

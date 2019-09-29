@@ -10,7 +10,7 @@ import org.assertj.core.util.Lists;
 import org.junit.Test;
 
 
-public class Lecture1 {
+public class Lecture1_Filter_Limit {
 
   @Test
   public void imperativeApproach() throws IOException {

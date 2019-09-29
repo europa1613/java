@@ -13,7 +13,7 @@ import java.util.stream.Collectors;
 import mockdata.MockData;
 import org.junit.Test;
 
-public class Lecture5 {
+public class Lecture5_Filter_Map_Avg {
 
   @Test
   public void understandingFilter() throws Exception {

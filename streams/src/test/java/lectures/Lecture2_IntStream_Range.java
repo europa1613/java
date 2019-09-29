@@ -6,7 +6,7 @@ import java.util.stream.IntStream;
 import mockdata.MockData;
 import org.junit.Test;
 
-public class Lecture2 {
+public class Lecture2_IntStream_Range {
 
   @Test
   public void range() throws Exception {

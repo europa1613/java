@@ -6,7 +6,7 @@ import java.util.Arrays;
 import java.util.function.Predicate;
 import org.junit.Test;
 
-public class Lecture6 {
+public class Lecture6_FindAny_FindFirst {
 
   final Predicate<Integer> numbersLessThan10 = n -> n > 5 && n < 10;
 

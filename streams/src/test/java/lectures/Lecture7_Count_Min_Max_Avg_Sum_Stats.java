@@ -12,7 +12,7 @@ import java.util.stream.Collectors;
 import mockdata.MockData;
 import org.junit.Test;
 
-public class Lecture7 {
+public class Lecture7_Count_Min_Max_Avg_Sum_Stats {
 
   @Test
   public void count() throws Exception {
