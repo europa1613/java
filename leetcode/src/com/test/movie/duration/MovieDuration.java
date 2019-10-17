@@ -1,5 +1,6 @@
 package com.test.movie.duration;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.stream.Collectors;
 import java.util.stream.IntStream;
@@ -30,6 +31,9 @@ public class MovieDuration {
 										.boxed()
 										.collect(Collectors.toList());
 		System.out.println(list);
+		//Integer.MIN_VALUE;
+		
+		//Arrays.sort(selectedMovies);
 	}
 
 	public static int[] selectedMovies(int[] movies, int d, int offset) {
