@@ -1,6 +1,5 @@
 package com.test.java.puzzler.lockmess.case_study;
 
-import java.util.Objects;
 import java.util.Timer;
 import java.util.TimerTask;
 
