@@ -96,6 +96,10 @@ public class MonoTest {
         .onErrorReturn("B")
         .log()
         .subscribe(System.out::println);
+
+    Mono.fromSupplier(() -> "1").log()
+        .subscribe(System.out::println);
+
   }
 
 }
