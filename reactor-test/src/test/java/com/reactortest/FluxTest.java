@@ -101,7 +101,7 @@ public class FluxTest {
         });
   }
 
-  @Test
+  @Test//Same as ABOVE, without having to implement a {Base}Subscriber
   public void fluxLimitRate() {
     Flux.range(1, 5)
         .log()
