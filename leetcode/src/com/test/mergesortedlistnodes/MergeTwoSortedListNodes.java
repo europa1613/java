@@ -14,6 +14,8 @@ import java.util.List;
  * }
  */
 
+// https://leetcode.com/problems/merge-two-sorted-lists/submissions/
+
 public class MergeTwoSortedListNodes {
     public static void main(String[] args) {
         List<Integer> list1 = Arrays.asList(1, 2);
